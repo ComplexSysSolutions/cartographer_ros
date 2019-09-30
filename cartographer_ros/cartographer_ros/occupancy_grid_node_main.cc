@@ -40,9 +40,9 @@
 DEFINE_double(resolution, 0.05,
               "Resolution of a grid cell in the published occupancy grid.");
 DEFINE_double(publish_period_sec, 1.0, "OccupancyGrid publishing period.");
-DEFINE_bool(include_frozen_submaps, true,
+DEFINE_bool(include_frozen_submaps, false,
             "Include frozen submaps in the occupancy grid.");
-DEFINE_bool(include_unfrozen_submaps, true,
+DEFINE_bool(include_unfrozen_submaps, false,
             "Include unfrozen submaps in the occupancy grid.");
 DEFINE_string(occupancy_grid_topic, cartographer_ros::kOccupancyGridTopic,
               "Name of the topic on which the occupancy grid is published.");
